@@ -1,0 +1,81 @@
+.aboutUsPage {overflow: hidden;}
+.aboutSectinFirst {border-bottom:solid 1px #ccc; padding:30px 0px 30px 0px; margin-bottom: 0px; position:relative;
+	&:before { background: transparent; left: 0px; top:-30px; position: absolute; content:"About us"; font-size: 290px; color: #F7F7F7;  font-family: 'playfair_displaybold'; line-height: 1;}
+	.aboutSectionDesc { margin: 0px 0px 20px 0px;}
+}
+.aboutSectionDesc {
+	h1, h2 {font-weight: normal;font-family: 'playfair_displayregular'; font-size: 24px; color: #333; margin: 0px 0px 15px 0px; line-height: normal;
+		span{font-family: 'playfair_displaybold';}
+	}
+	.desc { margin: 0px 0px 20px 0px;font-size: 16px;line-height: 32px; color: #666666;}
+	.redBtn {width: 174px;text-align: center;}
+}
+.imgWithLogo {
+	.verticalLogo { display: none;}
+	.aboutImg {display: block; position: relative; border-radius: 3px;
+		box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);}
+}
+.aboutSectinSecound { padding: 30px 0px 10px 0px;
+	.aboutImgC { margin-bottom: 20px;}
+	.aboutSectionDesc {margin: 0px 0px 20px 0px; }
+}
+.aboutUsPage {
+	.homeSectionHeading {
+		.desc {font-size: 16px;padding-left: 60px; position: relative; line-height: 22px; color: #333333;     margin-bottom: 20px; font-family: 'open_sanssemibold';
+			span {position: absolute; left: 0px; top: 0px; color: #999999;font-family: 'open_sansregular', Arial;}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.aboutSectinFirst { padding:93px 0px 160px 0px; margin-bottom: 60px;
+		.aboutSectionDesc {margin: 102px 0px 20px 0px;}
+		.desc {margin: 0px 0px 37px 0px;}
+	}
+	.aboutSectionDesc {
+		h1, h2 {font-size: 36px;}
+	}
+	.aboutSectinSecound {max-width: 960px; margin: 0px auto; padding: 30px 0px 68px 0px;
+		.leftBlock {float: left; width: 46%;}
+		.rightBlock {float: right; width: 46%;}
+		.aboutImgC {margin-left: auto; display: block; margin-bottom: 150px;}
+		.aboutImgB {margin-top: 70px;}
+		.aboutSectionDesc {margin: 0px 0px 20px 0px; 
+			h2 {line-height: 1;}
+			.desc {line-height: 28px;}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.imgWithLogo {position:relative;
+		.aboutImg {margin-left: auto;}
+		&:before {content:""; bottom:-80px; left:0px; width:370px; height:370px; position:absolute;
+			border-radius: 3px;box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+			background: #333 url(../img/black-carpet.jpg);
+		}
+		.verticalLogo { bottom:0px; left:20px; position:absolute; display: block; opacity: 0;
+			animation: verticalLogoAnimation 0.3s linear 0.5s both;
+		}
+		@keyframes verticalLogoAnimation {
+			from {opacity: 0; bottom: 100px;}
+			to {opacity: 1; bottom: 10px;}
+		}
+	}
+}
+@media (min-width: 1270px) {
+	.imgWithLogo {
+		&:before {left:46px; }
+		.verticalLogo {left:72px;}
+	}
+}
+@media (min-width: 1300px) {
+	.aboutUsPage {
+		.homeSectionHeading {
+			h2 {top: 80px;}
+			.desc {position: absolute; left: 15px; top: 190px;  max-width: 310px; }
+		}
+		.testmonialSlider {
+			.testmonialSlideCount {bottom: 70px;}
+			.owl-nav {bottom: 72px;}
+		}
+	}
+}

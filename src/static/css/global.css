@@ -1,0 +1,90 @@
+/** Globel css (reset css) **/
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary, title {
+  display: block; }
+
+body {
+  font-family: Arial;
+  line-height: 1.5;
+  font-size: 12px;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+strong, th {
+  font-weight: bold; }
+
+ol, ul {
+  list-style: none; }
+
+li {
+  position: relative; }
+
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+a:active, a:focus, input[type="image"], select:focus, input, input[type="button"]:focus, :focus {
+  outline: 0; }
+
+/*For Clear*/
+.clearfix {
+  zoom: 1; }
+
+.clearfix:before, .clearfix:after {
+  display: block;
+  content: "";
+  line-height: 0; }
+
+.clearfix:after {
+  clear: both; }
+
+.clear {
+  clear: both; }
+
+.floatleft {
+  float: left; }
+
+.floatright {
+  float: right; }
+
+.textright {
+  text-align: right; }
+
+.textleft {
+  text-align: left; }
+
+.textcenter {
+  text-align: center; }
